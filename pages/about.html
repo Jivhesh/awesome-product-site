@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — ProductName</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    .about-hero { padding: 10rem 0 4rem; text-align: center; }
+    .about-hero h1 { font-size: clamp(2rem, 4vw, 3rem); font-weight: 800; margin-bottom: var(--space-sm); }
+    .about-hero p { color: var(--clr-text-muted); max-width: 600px; margin: 0 auto; font-size: 1.1rem; line-height: 1.7; }
+
+    .about-values { padding: var(--space-2xl) 0; }
+    .values-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--space-md); margin-top: var(--space-xl); }
+    .value-card { background: var(--clr-surface); border: 1px solid var(--clr-border); border-radius: var(--radius-md); padding: var(--space-lg); }
+    .value-card h3 { margin-bottom: var(--space-xs); font-size: 1.15rem; }
+    .value-card p { color: var(--clr-text-muted); font-size: 0.95rem; line-height: 1.6; }
+    .value-icon { font-size: 2rem; margin-bottom: var(--space-sm); }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container navbar__inner">
+      <a href="../index.html" class="navbar__logo"><span class="logo-icon">◆</span> ProductName</a>
+      <ul class="navbar__links">
+        <li><a href="../index.html#features">Features</a></li>
+        <li><a href="../index.html#testimonials">Testimonials</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="about-hero">
+    <div class="container">
+      <h1>We're building the tools<br>creators <span class="gradient-text">deserve</span></h1>
+      <p>We're a small, passionate team of designers and engineers who believe building great products should be simple, fast, and enjoyable.</p>
+    </div>
+  </section>
+
+  <section class="about-values">
+    <div class="container">
+      <h2 class="section__title">Our Values</h2>
+      <div class="values-grid">
+        <div class="value-card">
+          <div class="value-icon">💡</div>
+          <h3>Simplicity First</h3>
+          <p>We cut through complexity to deliver tools that just work. No bloat, no clutter.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon">🤝</div>
+          <h3>Built Together</h3>
+          <p>We build in the open, listen to feedback, and ship what matters most to you.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon">🎯</div>
+          <h3>Quality Over Quantity</h3>
+          <p>Every feature is crafted with care. We'd rather do fewer things exceptionally well.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__bottom">
+      <p>&copy; 2026 ProductName. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
